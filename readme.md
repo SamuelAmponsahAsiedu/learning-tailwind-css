@@ -24,4 +24,4 @@ if installed
   -In package.json add to scripts  
    "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
 
--In vscode terminal run 'mpm run dev'
+-In vscode terminal run 'npm run dev'
