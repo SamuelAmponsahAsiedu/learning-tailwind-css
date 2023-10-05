@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark:bg-slate-900 dark:text-white">
+    <!-- tailwind colours -->
+    <h1 class="bg-red-400 text-white">Hello Tailwind</h1>
+    <h1 class="border-4 border-green-600">Hello Tailwind</h1>
+    <h2 class="text-green-600">Hello World</h2>
+    <h2 class="text-yellow-600">Hello World</h2>
+    <h1 class="text-cusCol-100">Hello world</h1>
+
+    <!-- tailwind configuration -->
+    <div class="text-xs sm:text-base md:text-lg lg:text-3xl">
+        <p class="mb-1 text-xs sm:text-base md:text-lg lg:text-3xl">HELLO THERE</p>
+        <p>A sentence</p>
+    </div>
+
+    <!-- Tailwind Typography -->
+    <div>
+        <h1 class="text-3xl italic">Title 1</h1>
+        <h2 class="text-2xl">Title 2</h2>
+        <h3 class="text-xl">Title 3</h3>
+        <p class="text-base underline decoration-slate-700 decoration-dotted underline-offset-8"> a Regular paragraph</p>
+        <p class="text-sm">Description paragraph</p>
+        <p class="text-xs note">A litte note</p>
+    </div>
+
+    <!-- Tailwind Spaces and sizes  -->
+    <!-- padding is a space inside an element, margin space outside an element -->
+    <!-- (paddings) p-4 pt-4 pr-4 pl-4 pb-4  x-4 y-4--> 
+    <div>
+        <div class=" bg-blue-500">This is my title</div>
+        <div class="bg-red-300 -mt-2">This is my paragraph</div>
+    </div>
+    <div class="p-4 bg-red-400 ">
+        Hello box with padding
+    </div>
+    <div class="m-4 bg-red-400">
+        hello box with margin
+    </div>
+    <!--flex min-h-screen flex space-x-4 flex flex col -->
+    <div class="flex w-full">
+        <div class="w-1/5 min-w-min bg-blue-500">sidebar</div>
+        <div class="w-4/5 h-16 bg-red-300">Main content</div>
+    </div>
+<!-- 
+    <div class=" Parent">
+        <div>Header</div>
+        <div class="flex flex-row">
+            <div class="basis-3/4 grow" >Main content</div>
+            <div class="flex flex-col">
+                <div class="basis-1/4"> Side bar</div>
+                <div>Menu</div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="Parent1">
+        <div>Header</div>
+        <div class="flex">
+            <div class="basis-1/12">Side bar</div>
+            <div class="basis-6/12">Main content</div>
+            <div class="basis-2/12">Menu</div>
+        </div> -->
+
+        <!-- <div class="Parent1">
+            <div>Header</div>
+            <div class="flex flex:col md:flex-row">
+                <div class="md:w-32 bg-sky-600">Sidebar</div>
+                <div class="w-full bg-red-600">Main content</div>
+            </div> -->
+
+<!-- 
+        <div class="Parent1">
+            <div>Header</div>
+            <div class="flex flex:col md:flex-row">
+                <div class="flex w-full">
+                    <div class="w-full grow">01</div>
+                    <div class="w-full grow">02</div>
+                    <div class="w-full grow">03</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- flex justify-end justify-start justify-between justify-evenly -->
+        <!-- <div class="Parent1">
+            <div>Header</div>
+            <div class="flex justify-between">
+                <div>Sidebar</div>
+                <div>Main content</div>
+            </div>
+        </div> -->
+
+
+        <!-- Tailwind Grids -->
+        <!-- sm:=smallsccreen lg:=largescren-->
+        <!-- row-span-number col-span-number flex-grid-row grid-cols-number grid-rows-number gap-number auto-cols-max grid-flow-row-dense -->
+        <div class="h-screen text-white Parent bg-slate-900">
+            <div class="container mx-auto">
+                <div class=" grid lg:grid-cols-3 sm:grid-cols-3 gap-4 ">
+                    <div class="p-6 rounded-lg bg-sky-500 ">First Column</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Second Column</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Third Column</div>
+                    <div class="p-6 rounded-lg col-span-2 bg-sky-500 ">Fourth Column</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Fifth Columns</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Sixth Columns</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Seventh Columns</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">Eight Columns</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-screen text-white Parent bg-slate-900">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-6 sm:grid-cols-6 gap-4 auto-cols-max">
+                    <div class="col-span-4 col-start-2 p-6 rounded-lg bg-sky-500 ">01</div>
+                    <div class="col-start-1 col-end-3 p-6 rounded-lg bg-sky-500 ">02</div>
+                    <div class="col-span-2 col-end-7 p-6 rounded-lg bg-sky-500 ">03</div>
+                    <div class="col-start-1 col-end-7 p-6 rounded-lg  bg-sky-500 ">04</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-screen text-white Parent bg-slate-900">
+            <div class="container mx-auto">
+                <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4">
+                    <div class="p-6 row-span-3 rounded-lg bg-sky-500 ">01</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">02</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">03</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">04</div>
+                    <div class="p-6 row-span-3 rounded-lg bg-sky-500 ">05</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">06</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">07</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">08</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">09</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">10</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">11</div>
+                    <div class="p-6 rounded-lg bg-sky-500 ">12</div>  
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Layouts -->
+        <div class="h-screen text-white Parent bg-slate-900">
+            <div class="container-lg px-2 mx-auto bg-red-400 mt-6">
+                <h1>Hello</h1>
+            </div>
+        </div>
+
+        <div class="h-screen text-white Parent bg-slate-900">
+            <img src="/images/ netflix mobile.jpeg" alt="mobile">
+            <div class="container px-2 columns-3 ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur tempora temporibus nobis. Magnam possimus totam optio veritatis harum iure odio, in facere fugit, magni ea, nobis provident. Neque, ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur tempora temporibus nobis. Magnam possimus totam optio veritatis harum iure odio, in facere fugit, magni ea, nobis provident. Neque, ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur tempora temporibus nobis. Magnam possimus totam optio veritatis harum iure odio, in facere fugit, magni ea, nobis provident. Neque, ut.</p>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Borders -->
+        <!-- border-b border-l-8 border-t-4 -->
+        <div class="h-screen text-white bg-slate-900 Parent">
+            <header class="w-full border-2">Header</header>
+        </div>
+
+        <!-- effects and filters -->
+        <!-- shadow-2xl shadow-lg shadow-md shadow-color-number(shadow-cyan-500) shadadow-cyan-500/50 opacity-3 -->
+        <!-- blur-sm blur hover:blur-none-->
+        <!-- brightness-50 hover:brightness-100 contrat-50 hover:contrast-100 grayscale hover:grayscale-0-->
+        <!-- invert saturate-159 -->
+
+
+
+        <!-- <div class="h-screen p-4 Parent">
+            <div class="lg:grid-cols-2">
+                <div class="inline-block p-4 text-black bg-white border rounded-ld shadow-md brightness-50 hover:brightness-100">
+                    <img src="/images/ netflix mobile.jpeg" alt="" class="w-64 mb-4">
+                    <h1 class="text-2xl">Hello</h1>
+                    <p class="mb-4">This is my div</p>
+                    <button class="px-3 py-2 rounded-lg shadow-md cursor-pointer bg-cyan-200 shadow-cyan-500/50">Say Hello</button>
+                </div>
+                <div class="inline-block p-4 text-black bg-white border rounded-ld shadow-md brightness-50 hover:brightness-100">
+                    <img src="/images/ netflix mobile.jpeg" alt="" class="w-64 mb-4">
+                    <h1 class="text-2xl">Hello</h1>
+                    <p class="mb-4">This is my div</p>
+                    <button class="px-3 py-2 hover:-translate-y-1 transition rounded-lg shadow-md cursor-pointer bg-cyan-200 shadow-cyan-500/50">Say Hello</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- ANIMATIONS -->
+        <!-- hover:t-translate-y-1 transition delay-1000 animate-spin animate-ping animate-pulse animatite-bounce -->
+        <!-- scale-number rotate-90 origin-top-left-->
+        <!-- transition hover: origin-top-left  -->
+        <!-- skew--y-12 -->
+
+    <!-- Design System -->
+    <div>
+        <h1 class="mb-2 text-3xl font-bold">This is a title</h1>
+        <h2 >This is a subtitle</h2>
+        <p class="text-base">This is a paragraph</p>
+        <a class="  underline text-blue-500 hover:text-purple-500 transition" href="https://google.com">This is an anchor</a>
+    </div>
+    <div class="my-4">
+        <button class="px-4 py-2 rounded-lg  bg-blue-500  hover:bg-blue-900 transition hover:transition duration-300 opacity-80;">This is a button</button>
+    </div>
+    <div class="my-4">
+        <button class="px-4 py-2 rounded-lg bg-red-400 hover:bg-red-900 transition ">This is a secondary button</button>
+    </div>
+    <div class="my-4">
+        <button class="px-4 py-2 rounded-lg bg-slate-300  hover:bg-red-500/30 hover:disabled:opacity-30">Disabled button</button>
+    </div>
+    <div>
+        <input class="placeholder:italic px-2 border text-slate-500 text-sm border-slate-700 rounded-lg outline-none" type="text" placeholder="E-mail">
+    </div>
+    <div class="flex">
+        <input class="p-2 accent-purple-500 mr-1" type="checkbox" id="checkbox">
+        <label class="text-small text-slate-500 font-medium" for="checkbox">Checkbox</label>
+    </div>
+    <div>
+        <select class="px-2 border text-slate-500 text-sm border-slate-700 rounded-lg outline-none">
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+    </div>
+
+    <!-- CORE CONCEPTS -->
+
+
+
+        
+</body>
+</html>
